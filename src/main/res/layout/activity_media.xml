@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="1208dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="198dp"
+        android:layout_marginEnd="50dp"
+        android:background="@mipmap/bottombar1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageThumbnail"
+        android:layout_width="204dp"
+        android:layout_height="203dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="71dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/mediaimage1"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/rewindBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="50dp"
+        android:background="@mipmap/rewind"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar2" />
+
+    <ImageButton
+        android:id="@+id/playButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="50dp"
+        android:background="@mipmap/play"
+        app:layout_constraintStart_toEndOf="@+id/rewindBtn"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar2" />
+
+    <ImageButton
+        android:id="@+id/forwadBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="50dp"
+        android:background="@mipmap/forward"
+        app:layout_constraintStart_toEndOf="@+id/pauseBtn"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar2" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="623dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="54dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:foregroundTint="#FF9800"
+        android:outlineSpotShadowColor="#FF9800"
+        android:progressTint="#FF9800"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageThumbnail"
+        app:tickMarkTint="#FF9800" />
+
+    <ImageButton
+        android:id="@+id/pauseBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="50dp"
+        android:background="@mipmap/pause"
+        app:layout_constraintStart_toEndOf="@+id/playButton"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar2"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/editTextAlbumName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Album Name"
+        android:textColor="#FFC107"
+        android:textSize="26sp"
+        app:layout_constraintStart_toEndOf="@+id/imageThumbnail"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="AlbumName" />
+
+    <TextView
+        android:id="@+id/editTextSingerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Song Name"
+        android:textSize="20sp"
+        android:textColor="#FF9800"
+        app:layout_constraintStart_toEndOf="@+id/imageThumbnail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAlbumName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/navigationBtn"
+        android:layout_width="218dp"
+        android:layout_height="218dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="452dp"
+        android:background="@mipmap/navigation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/mediaBtn"
+        android:layout_width="218dp"
+        android:layout_height="218dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="467dp"
+        android:background="@mipmap/media1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/navigationBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/weatherBtn"
+        android:layout_width="218dp"
+        android:layout_height="218dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="433dp"
+        android:background="@mipmap/weather1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mediaBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/phoneBtn"
+        android:layout_width="218dp"
+        android:layout_height="218dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="433dp"
+        android:background="@mipmap/phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/weatherBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/hvacBtn"
+        android:layout_width="118dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="40dp"
+        android:background="@mipmap/hvac1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navigationBtn" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="508dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="198dp"
+        android:layout_marginEnd="50dp"
+        android:background="@mipmap/bottombar1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
