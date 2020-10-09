@@ -13,6 +13,7 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
+    //First Commit
     private ImageButton mediaButton, weatherButton,hvacButton, navigationButton,phoneButton;
 
     @Override
