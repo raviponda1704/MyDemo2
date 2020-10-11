@@ -30,6 +30,7 @@ public class Media2Activity extends AppCompatActivity {
     private SeekBar seekbar;
     public static int oneTimeOnly = 0;
 
+    //Commit 5
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
