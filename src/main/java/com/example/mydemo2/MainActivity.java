@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     //First Commit
     private ImageButton mediaButton, weatherButton,hvacButton, navigationButton,phoneButton;
-
+    //Second Commit
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
